@@ -36,7 +36,11 @@ function changeCarPrice() {
   car.price += 10
 }
 function changeFirstGame() {
-  games[0].name = 'dsfsdfsdfsdf'
+  if (games.length === 0) {
+    return
+  }
+  const newName = 'dsfsdfsdfsdf'
+  games[0].name = newName
 }
 function test() {
   obj.a.b.c.d = 999
